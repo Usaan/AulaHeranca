@@ -74,5 +74,30 @@ namespace AulaHeranca
             // vai ter q criar outro form q tenha um TextBox pra receber o input e um botão pra confirmar
             // daí é só chamar esse form como se fosse um método
         }
+
+        private void bunifuUserControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuUserControl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void menuicon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

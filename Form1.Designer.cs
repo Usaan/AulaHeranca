@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.username = new Bunifu.UI.WinForms.BunifuLabel();
@@ -41,7 +41,14 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Depositar = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuButton1
@@ -63,11 +70,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges2;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges11;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Empty;
@@ -150,7 +157,7 @@
             this.username.Cursor = System.Windows.Forms.Cursors.Default;
             this.username.CursorType = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.username, "username");
-            this.username.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.username.ForeColor = System.Drawing.Color.White;
             this.username.Name = "username";
             this.username.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.username.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
@@ -163,8 +170,8 @@
             this.bunifuUserControl1.AllowMouseEffects = false;
             this.bunifuUserControl1.AnimationSpeed = 200;
             this.bunifuUserControl1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuUserControl1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.bunifuUserControl1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuUserControl1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuUserControl1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuUserControl1.BorderRadius = 1;
             this.bunifuUserControl1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
             this.bunifuUserControl1.BorderThickness = 1;
@@ -195,8 +202,8 @@
             this.menuicon.ImageActive = null;
             this.menuicon.ImageLocation = null;
             this.menuicon.ImageMargin = 20;
-            this.menuicon.ImageSize = new System.Drawing.Size(27, 26);
-            this.menuicon.ImageZoomSize = new System.Drawing.Size(47, 46);
+            this.menuicon.ImageSize = new System.Drawing.Size(19, 20);
+            this.menuicon.ImageZoomSize = new System.Drawing.Size(39, 40);
             this.menuicon.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuicon.InitialImage")));
             resources.ApplyResources(this.menuicon, "menuicon");
             this.menuicon.Name = "menuicon";
@@ -209,6 +216,7 @@
             this.menuicon.WaitOnLoad = false;
             this.menuicon.Zoom = 20;
             this.menuicon.ZoomSpeed = 10;
+            this.menuicon.Click += new System.EventHandler(this.menuicon_Click);
             // 
             // bunifuLabel1
             // 
@@ -326,18 +334,67 @@
             this.bunifuImageButton2.Zoom = 20;
             this.bunifuImageButton2.ZoomSpeed = 10;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.panel1.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.panel2.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.panel3.Controls.Add(this.bunifuButton1);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.panel4.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.panel5.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.panel6.Cursor = System.Windows.Forms.Cursors.PanSouth;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.Depositar);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.lbLimite);
             this.Controls.Add(this.lbSaldo);
             this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.bunifuUserControl1);
             this.Controls.Add(this.username);
@@ -348,6 +405,7 @@
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,6 +423,12 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuImageButton Depositar;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 
