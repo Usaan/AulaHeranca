@@ -122,5 +122,10 @@ namespace AulaHeranca
         {
            
         }
+
+        private void limit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
