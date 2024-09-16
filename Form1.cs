@@ -99,5 +99,28 @@ namespace AulaHeranca
         {
 
         }
+        bool eyestatus = true;
+        private void Eye_Click(object sender, EventArgs e)
+        {
+            
+            if (eyestatus)
+            {
+                Eye.Image = Properties.Resources.closeeye;
+            } else
+            {
+                Eye.Image = Properties.Resources.openeye;
+            }
+            eyestatus = !eyestatus;
+        }
+
+        private void bunifuLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

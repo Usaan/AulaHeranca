@@ -20,7 +20,29 @@ namespace AulaHeranca
         public decimal mostrarSaldo() {
             return Saldo;
         }
-        public void depositarSaldo() { }
-        public void sacarSaldo() { }
+        public void depositarSaldo(decimal valor) 
+        {
+            if (valor > 0)
+            {
+                Saldo += valor;
+            }
+            else
+            {
+                throw new ArgumentException("O valor do depósito deve ser positivo.");
+            }
+        }
+        public void sacarSaldo(decimal valor) {
+            if (valor < 0)
+            {
+                throw new ArgumentException("O valor do saque deve ser positivo.");
+            }
+
+            if (valor > Saldo)
+            {
+                throw new ArgumentException("O valor do saque deve ser menor que o saldo disponível.");
+            }
+
+            Saldo -= valor;
+        }
     }
 }
